@@ -24,7 +24,8 @@ jobs:
       run: dotnet build cartservice.sln --no-restore --configuration Release
 
     - name: Run tests
-      run: dotnet test cartservice.sln --no-build --verbosity normal
+      run: dotnet test tests/cartservice.tests.csproj --configuration Release --verbosity normal
+
 
     - name: Login to DockerHub
       uses: docker/login-action@v3
