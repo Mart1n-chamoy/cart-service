@@ -16,6 +16,6 @@ spec:
     spec:
       containers:
         - name: cartservice
-          image: mart1n-chamoy/cartservice:latest
+          image: martin555/cartservice:latest
           ports:
             - containerPort: 8080
